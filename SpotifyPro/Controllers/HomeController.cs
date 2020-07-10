@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using SpotifyPro.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using SpotifyPro.Models;
-
 namespace SpotifyPro.Controllers
 {
     public class HomeController : Controller
@@ -19,6 +15,11 @@ namespace SpotifyPro.Controllers
         }
 
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult IndexPrinciapl()
         {
             return View();
         }
